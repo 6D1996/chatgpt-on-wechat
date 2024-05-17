@@ -67,6 +67,7 @@ def any_to_wav(any_path, wav_path):
     audio.set_frame_rate(8000)    # 百度语音转写支持8000采样率, pcm_s16le, 单通道语音识别
     audio.set_channels(1)
     audio.export(wav_path, format="wav", codec='pcm_s16le')
+    return 
 
 
 def any_to_sil(any_path, sil_path):
